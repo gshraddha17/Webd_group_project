@@ -1,0 +1,264 @@
+/* Asterisk(*) is selector which selects all the elements of the page */
+
+
+/* . selector is used for class */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    /* Linear gradient is used to create a transition between two or more colors along a straight line */
+    /* url is used to give address of image. Here I have given the online address of image shown in background*/
+    background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    /* cover property will cover whole background with one image else image would ahve repeated itself with original size */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    /* float is used to make things float in particular direction e.g left in this case */
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    border-radius: 25px;
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.content-section .title {
+    /* text-transform will make all the letters in title uppercase in this case */
+    text-transform: uppercase;
+    font-size: 28px;
+    color: yellow;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+    color: black;
+    font-size: 21px;
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    /* google font which we added in html through bootstrap link have been used here by font family property */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.content-section .content .button {
+    margin-top: 30px;
+}
+
+.content-section .content .button a {
+    border-radius: 100px;
+    background-color: #04252b;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: rgba(0, 3, 3, 0.349);
+    color: black;
+}
+
+.content-section .social {
+    margin: 40px 25px;
+}
+
+.content-section .social i {
+    color: #04252b;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+
+/* hover is used to show changes on hovering mouse over that particular item or content */
+
+.content-section .social i:hover {
+    color: black;
+}
+
+.footer {
+    height: 200px;
+    background-color: black;
+}
+
+.one {
+    margin-top: 10px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 85px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    position: absolute;
+    /* translate function repositions element in the horizontal or vertical directions */
+    translate: translate(-50%, -50%);
+    left: 35%;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.customer {
+    margin-right: 5px;
+    margin-top: 4px;
+    float: left;
+}
+
+.one:hover {
+    background-color: #04252b;
+    color: black;
+    cursor: pointer;
+}
+
+.two {
+    margin-top: 10px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 85px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    position: absolute;
+    translate: translate(-50%, -50%);
+    left: 55%;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.city {
+    margin-right: 5px;
+    margin-top: 4px;
+    float: left;
+}
+
+.two:hover {
+    background-color: #04252b;
+    color: black;
+    cursor: pointer;
+}
+
+.three {
+    margin-top: 100px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 85px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    position: absolute;
+    translate: translate(-50%, -50%);
+    left: 35%;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product {
+    margin-right: 5px;
+    margin-top: 3px;
+    float: left;
+}
+
+.three:hover {
+    background-color: #04252b;
+    color: black;
+    cursor: pointer;
+}
+
+.four {
+    margin-top: 100px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 85px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    position: absolute;
+    translate: translate(-50%, -50%);
+    left: 55%;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.globe {
+    margin-right: 5px;
+    margin-top: 4px;
+    float: left;
+}
+
+.four:hover {
+    background-color: #04252b;
+    color: black;
+    cursor: pointer;
+}
+
+.last p {
+    padding-left: 570px;
+    padding-top: 200px;
+    color: rgb(221, 37, 68);
+}
+
+
+/* Media query to make website responsive */
+
+@media screen and (max-width: 768px) {
+    /* These changes will be applied or visible till the creen width is 768px after that these will not visible */
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section {
+        float: none;
+        width: 100%;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button {
+        text-align: center;
+    }
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+    .content-section .social {
+        text-align: center;
+    }
+}
